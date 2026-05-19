@@ -7,6 +7,16 @@ hero_image: /assets/images/visual-media/framework.png
 intro_video: /assets/images/visual-media/video-generation-example.mp4
 ---
 
+<style>
+  /* Shrink hero image on this page only. Uses :has() (supported by all modern browsers since 2023). */
+  article:has(.topic-page-marker[data-topic="visual-media"]) > figure {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+</style>
+<span class="topic-page-marker" data-topic="visual-media" hidden></span>
+
 Visual media research covers **low-level vision**, **computational photography**, and **generative pipelines** where fidelity and latency both matter. Topics include denoising and deblurring, HDR fusion, reference-guided restoration, and evaluation that aligns with human preference studies rather than single PSNR numbers.
 
 ### In Cooperation With
