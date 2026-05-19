@@ -23,10 +23,17 @@ intro_video: /assets/images/visual-media/video-generation-example.mp4
   .vm-media-grid img,
   .vm-media-grid video {
     width: 100%;
+    max-width: 100%;
     height: auto;
     display: block;
     border-radius: 0.75rem;
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+  /* Force 16:9 only inside the generation grid (webp + mp4 are already 16:9). */
+  .vm-media-grid.ratio-16x9 img,
+  .vm-media-grid.ratio-16x9 video {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
   }
   .vm-media-grid figcaption {
     font-size: 0.85rem;
@@ -66,14 +73,12 @@ Image and video generation and editing aim to synthesize new visual content from
 
 These technologies sit at the entry point of modern visual creation. They underpin smartphone computational photography, professional film and television post-production, e-commerce visual design, advertising, virtual production, dataset synthesis for training other AI systems, and accessible creative tools for non-expert users. As large generative models become the standard substrate for visual content, generation and editing increasingly serve as the upper-level interface through which all downstream low-level tasks — restoration, enhancement, super-resolution — can be reformulated as conditional generation problems. Our work in this direction focuses on controllable, identity-preserving, and reference-aware models that bridge the gap between "looks good" and "is faithful," and on bringing professional-grade control to a single, unified architecture.
 
-<div class="vm-media-grid cols-2">
+<div class="vm-media-grid cols-2 ratio-16x9">
   <figure>
-    <img src="{{ '/assets/images/visual-media/image-generation-example.webp' | relative_url }}" alt="Image generation example" loading="lazy" decoding="async" />
-    <figcaption>Image generation example</figcaption>
+    <img src="{{ '/assets/images/visual-media/image-generation-example.webp' | relative_url }}" alt="Image generation example" width="1440" height="810" loading="lazy" decoding="async" />
   </figure>
   <figure>
-    <video src="{{ '/assets/images/visual-media/video-generation-example.mp4' | relative_url }}" autoplay muted loop playsinline preload="metadata"></video>
-    <figcaption>Video generation example</figcaption>
+    <video src="{{ '/assets/images/visual-media/video-generation-example.mp4' | relative_url }}" width="1928" height="1072" autoplay muted loop playsinline preload="metadata"></video>
   </figure>
 </div>
 
