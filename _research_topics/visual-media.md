@@ -256,6 +256,15 @@ These technologies are critical across numerous applications, including computat
 })();
 </script>
 
+<div class="vm-media-grid cols-2">
+  <figure>
+    <img src="{{ '/assets/images/visual-media/hypir-b-1.png' | relative_url }}" alt="HYPIR result 1" loading="lazy" decoding="async" />
+  </figure>
+  <figure>
+    <img src="{{ '/assets/images/visual-media/hypir-b-2.png' | relative_url }}" alt="HYPIR result 2" loading="lazy" decoding="async" />
+  </figure>
+</div>
+
 ### In Cooperation With
 
 Tooling collaborations with broadcast archives and mobile OEMs on perceptual metrics, on-device super-resolution, and dataset curation for under-represented sensors.
