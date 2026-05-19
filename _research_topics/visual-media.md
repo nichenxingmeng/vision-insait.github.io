@@ -256,7 +256,7 @@ These technologies are critical across numerous applications, including computat
 })();
 </script>
 
-**HYPIR — High-Performance Image Restoration.** A new state-of-the-art image restoration model that combines tens-fold speed gains over prior methods with uncompromising visual fidelity. HYPIR revives historic photographs, scales to 8K with photorealistic detail, recovers fine text with readable clarity, and accepts natural-language instructions for fine-grained control over style and detail intensity — a single model that is fast, faithful, and controllable.
+**HYPIR.** A new state-of-the-art image restoration model that combines tens-fold speed gains over prior methods with uncompromising visual fidelity. HYPIR revives historic photographs, scales to 8K with photorealistic detail, recovers fine text with readable clarity, and accepts natural-language instructions for fine-grained control over style and detail intensity — a single model that is fast, faithful, and controllable.
 
 <div class="vm-media-grid cols-2">
   <figure>
@@ -267,7 +267,7 @@ These technologies are critical across numerous applications, including computat
   </figure>
 </div>
 
-**HYPVR — High-Performance Video Restoration.** A new state-of-the-art video restoration model that bridges the long-standing gap between image-level photorealism and video-level temporal stability. Rather than relying on weaker video generative priors, HYPVR transfers powerful image generation priors to the video domain — recovering fine textures, readable text, and faithful faces that prior video models cannot reach. To make these stochastic details temporally coherent, it rebalances injected noise in the frequency domain to preserve input structure, propagates the rebalanced noise along optical flow so detail patterns move with the content, denoises the encoder via a Noise-to-Noise objective to remove frame-dependent latent perturbations, and adds decoupled temporal attention for cross-frame consistency — yielding restorations that are simultaneously detail-rich, structurally faithful, and temporally stable.
+**HYPVR.** A new state-of-the-art video restoration model that bridges the long-standing gap between image-level photorealism and video-level temporal stability. Rather than relying on weaker video generative priors, HYPVR transfers powerful image generation priors to the video domain — recovering fine textures, readable text, and faithful faces that prior video models cannot reach. To make these stochastic details temporally coherent, it rebalances injected noise in the frequency domain to preserve input structure, propagates the rebalanced noise along optical flow so detail patterns move with the content, denoises the encoder via a Noise-to-Noise objective to remove frame-dependent latent perturbations, and adds decoupled temporal attention for cross-frame consistency — yielding restorations that are simultaneously detail-rich, structurally faithful, and temporally stable.
 
 <div class="vm-media-single">
   <figure>
