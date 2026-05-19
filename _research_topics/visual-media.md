@@ -20,6 +20,16 @@ intro_video: /assets/images/visual-media/video-generation-example.mp4
   }
   .vm-media-grid.cols-2 { grid-template-columns: repeat(2, 1fr); }
   .vm-media-grid figure { margin: 0; }
+  /* Override theme's bare `video { position:absolute; top:0; left:0; ... }`
+     rule from _hero.scss, which would otherwise rip our video out of the
+     grid and float it over the page. */
+  .vm-media-grid video,
+  .vm-media-single video {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    height: auto !important;
+  }
   .vm-media-grid img,
   .vm-media-grid video {
     width: 100%;
