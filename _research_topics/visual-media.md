@@ -256,6 +256,8 @@ These technologies are critical across numerous applications, including computat
 })();
 </script>
 
+**HYPIR — High-Performance Image Restoration.** A new state-of-the-art image restoration model that combines tens-fold speed gains over prior methods with uncompromising visual fidelity. HYPIR revives historic photographs, scales to 8K with photorealistic detail, recovers fine text with readable clarity, and accepts natural-language instructions for fine-grained control over style and detail intensity — a single model that is fast, faithful, and controllable.
+
 <div class="vm-media-grid cols-2">
   <figure>
     <img src="{{ '/assets/images/visual-media/hypir-b-1.png' | relative_url }}" alt="HYPIR result 1" loading="lazy" decoding="async" />
