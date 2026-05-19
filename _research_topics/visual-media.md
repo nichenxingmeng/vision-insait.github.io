@@ -265,6 +265,14 @@ These technologies are critical across numerous applications, including computat
   </figure>
 </div>
 
+**HYPVR — High-Performance Video Restoration.** A new state-of-the-art video restoration model that brings image-level photorealism to video without sacrificing temporal stability. HYPVR transfers powerful image generative priors to the video domain — synthesizing fine textures, text and faces that prior video models cannot reach — while keeping every frame coherent through motion-aligned noise propagation and decoupled temporal attention. A single model that is detail-rich, temporally consistent, and runs at one-step speed.
+
+<div class="vm-media-single">
+  <figure>
+    <video src="{{ '/assets/images/visual-media/hypvr.mp4' | relative_url }}" width="1920" height="1080" autoplay muted loop playsinline preload="metadata"></video>
+  </figure>
+</div>
+
 ### In Cooperation With
 
 Tooling collaborations with broadcast archives and mobile OEMs on perceptual metrics, on-device super-resolution, and dataset curation for under-represented sensors.
