@@ -221,17 +221,14 @@ These technologies are critical across numerous applications, including computat
 
 <figure class="vm-media-single">
   <img src="{{ '/assets/images/visual-media/hypir-7.gif' | relative_url }}" alt="HYPIR restoration animation" loading="lazy" decoding="async" />
-  <figcaption>HYPIR — animated restoration result</figcaption>
 </figure>
 
 <div class="vm-media-grid cols-2">
   <figure>
     <img src="{{ '/assets/images/visual-media/hypir-b-1.png' | relative_url }}" alt="HYPIR result 1" loading="lazy" decoding="async" />
-    <figcaption>HYPIR — result A</figcaption>
   </figure>
   <figure>
     <img src="{{ '/assets/images/visual-media/hypir-b-2.png' | relative_url }}" alt="HYPIR result 2" loading="lazy" decoding="async" />
-    <figcaption>HYPIR — result B</figcaption>
   </figure>
 </div>
 
