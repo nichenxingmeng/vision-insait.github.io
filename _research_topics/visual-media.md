@@ -3,8 +3,8 @@ topic_id: visual-media
 title: Visual Media
 order: 5
 summary: Imaging, restoration, generation, and cinematic quality control for real-world capture.
-hero_image: /assets/images/blog/blog-img-3.jpg
-intro_video: /site-covers/home/hero-video.mp4
+hero_image: /assets/images/visual-media/framework.png
+intro_video: /assets/images/visual-media/video-generation-example.mp4
 ---
 
 Visual media research covers **low-level vision**, **computational photography**, and **generative pipelines** where fidelity and latency both matter. Topics include denoising and deblurring, HDR fusion, reference-guided restoration, and evaluation that aligns with human preference studies rather than single PSNR numbers.
