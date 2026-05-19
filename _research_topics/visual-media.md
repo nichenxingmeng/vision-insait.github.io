@@ -267,7 +267,7 @@ These technologies are critical across numerous applications, including computat
   </figure>
 </div>
 
-**HYPVR — High-Performance Video Restoration.** A new state-of-the-art video restoration model that brings image-level photorealism to video without sacrificing temporal stability. HYPVR transfers powerful image generative priors to the video domain — synthesizing fine textures, text and faces that prior video models cannot reach — while keeping every frame coherent through motion-aligned noise propagation and decoupled temporal attention. A single model that is detail-rich, temporally consistent, and runs at one-step speed.
+**HYPVR — High-Performance Video Restoration.** A new state-of-the-art video restoration model that bridges the long-standing gap between image-level photorealism and video-level temporal stability. Rather than relying on weaker video generative priors, HYPVR transfers powerful image generation priors to the video domain — recovering fine textures, readable text, and faithful faces that prior video models cannot reach. To make these stochastic details temporally coherent, it rebalances injected noise in the frequency domain to preserve input structure, propagates the rebalanced noise along optical flow so detail patterns move with the content, denoises the encoder via a Noise-to-Noise objective to remove frame-dependent latent perturbations, and adds decoupled temporal attention for cross-frame consistency — yielding restorations that are simultaneously detail-rich, structurally faithful, and temporally stable.
 
 <div class="vm-media-single">
   <figure>
