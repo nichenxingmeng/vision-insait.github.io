@@ -13,6 +13,12 @@ intro_video: /assets/images/visual-media/video-generation-example.mp4
     margin-left: auto;
     margin-right: auto;
   }
+  /* Justify the body paragraphs (scoped to this page only). */
+  article:has(.topic-page-marker[data-topic="visual-media"]) .topic-article > p {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+  }
   .vm-media-grid {
     display: grid;
     gap: 1rem;
@@ -143,6 +149,32 @@ intro_video: /assets/images/visual-media/video-generation-example.mp4
   }
   .vm-compare .vm-compare-label.left { left: 0.75rem; }
   .vm-compare .vm-compare-label.right { right: 0.75rem; }
+
+  /* Two-column row that mixes the .vm-compare slider with a sibling figure. */
+  .vm-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: stretch;
+    margin: 1.5rem 0 2.5rem;
+  }
+  .vm-row > .vm-compare { margin: 0; max-width: none; }
+  .vm-row > figure {
+    margin: 0;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  }
+  .vm-row > figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  @media (max-width: 700px) {
+    .vm-row { grid-template-columns: 1fr; }
+    .vm-row > figure img { height: auto; }
+  }
 </style>
 <span class="topic-page-marker" data-topic="visual-media" hidden></span>
 
@@ -169,13 +201,18 @@ Image and video restoration and enhancement aim to transform low-quality visuals
 
 These technologies are critical across numerous applications, including computational photography on smartphones, the restoration of historical photographs, cultural heritage preservation, artistic creation, digital archiving, medical imaging and autonomous driving. For videos, they significantly improve film production, content generation, streaming quality and surveillance analysis. Beyond delivering visually pleasing results, restoration and enhancement also produce better inputs for downstream perception tasks such as detection, recognition and tracking — making them a foundational layer of the broader visual AI stack. With the rapid advancement of deep learning, the field now faces higher expectations on fidelity, perceptual quality assessment, interpretability and the ability to generalise across truly real-world degradations. Our work in this direction targets exactly these frontiers: pushing low-level vision from "looks better" to "is provably faithful," and from synthetic benchmarks to the long tail of real-world data.
 
-<div class="vm-compare" role="slider" tabindex="0" aria-label="Drag to compare degraded input with restored output" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-  <img src="{{ '/assets/images/visual-media/img2_blur.jpg' | relative_url }}" alt="Degraded input" loading="lazy" decoding="async" />
-  <img class="vm-compare-after" src="{{ '/assets/images/visual-media/img2_clear.jpg' | relative_url }}" alt="Restored output" loading="lazy" decoding="async" />
-  <span class="vm-compare-label left">INPUT</span>
-  <span class="vm-compare-label right">RESTORED</span>
-  <div class="vm-compare-handle"></div>
-  <div class="vm-compare-knob" aria-hidden="true"></div>
+<div class="vm-row">
+  <div class="vm-compare" role="slider" tabindex="0" aria-label="Drag to compare degraded input with restored output" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
+    <img src="{{ '/assets/images/visual-media/img2_blur.jpg' | relative_url }}" alt="Degraded input" loading="lazy" decoding="async" />
+    <img class="vm-compare-after" src="{{ '/assets/images/visual-media/img2_clear.jpg' | relative_url }}" alt="Restored output" loading="lazy" decoding="async" />
+    <span class="vm-compare-label left">INPUT</span>
+    <span class="vm-compare-label right">RESTORED</span>
+    <div class="vm-compare-handle"></div>
+    <div class="vm-compare-knob" aria-hidden="true"></div>
+  </div>
+  <figure>
+    <img src="{{ '/assets/images/visual-media/hypir-7.gif' | relative_url }}" alt="HYPIR restoration animation" loading="lazy" decoding="async" />
+  </figure>
 </div>
 
 <script>
@@ -218,10 +255,6 @@ These technologies are critical across numerous applications, including computat
   document.querySelectorAll('.vm-compare').forEach(init);
 })();
 </script>
-
-<figure class="vm-media-single">
-  <img src="{{ '/assets/images/visual-media/hypir-7.gif' | relative_url }}" alt="HYPIR restoration animation" loading="lazy" decoding="async" />
-</figure>
 
 <div class="vm-media-grid cols-2">
   <figure>
