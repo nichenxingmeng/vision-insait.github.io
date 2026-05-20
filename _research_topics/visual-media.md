@@ -203,8 +203,8 @@ These technologies are critical across numerous applications, including computat
 
 <div class="vm-row">
   <div class="vm-compare" role="slider" tabindex="0" aria-label="Drag to compare degraded input with restored output" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50">
-    <img src="{{ '/assets/images/visual-media/img2_blur.jpg' | relative_url }}" alt="Degraded input" loading="lazy" decoding="async" />
-    <img class="vm-compare-after" src="{{ '/assets/images/visual-media/img2_clear.jpg' | relative_url }}" alt="Restored output" loading="lazy" decoding="async" />
+    <img src="{{ '/assets/images/visual-media/img2_clear.jpg' | relative_url }}" alt="Restored output" loading="lazy" decoding="async" />
+    <img class="vm-compare-after" src="{{ '/assets/images/visual-media/img2_blur.jpg' | relative_url }}" alt="Degraded input" loading="lazy" decoding="async" />
     <span class="vm-compare-label left">INPUT</span>
     <span class="vm-compare-label right">RESTORED</span>
     <div class="vm-compare-handle"></div>
